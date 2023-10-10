@@ -13,20 +13,22 @@ body {
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none !important;
+    list-style: none;
 }
-.main_container {
+.principal {
     background-image: url("Background.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.main_container {
+.container {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.container_button{
+.container_botao{
     background-color: var(--botao-azul);
     border-radius: 1em;
     padding: 1em;
@@ -36,7 +38,7 @@ body {
     margin-bottom: lem;
 }
 
-.button_secundary{
+.botao_secundario{
     background-color: transparent;
     border: 2px solid var(--branco-principal);
     border-radius: 16px;
@@ -47,21 +49,21 @@ body {
     color: var(--cinza-secundario);
 }
 
-.container_title{
+.container_titulo{
     font-size: 28px;
     font-weight: 700;
 }
 
-.container_image{
+.container_imagem{
     margin: lem 0 2em 0;
 }
 
-.container_box{
+.container_caixa{
     margin: 0 6em;
     margin-top: 150px;
 }
 
-.secundary_image{
+.secundario__imagem{
     width: 80%;
     align-items: center;
 }
@@ -70,9 +72,59 @@ body {
     align-items: center;
 }
 
-.descricao_title{
+.descricao__titulo{
     font-weight: 700;
     font-size: 48px;
     color: var(--branco-principal);
     margin-bottom: 0.1em;
+}
+
+.dispositivos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dispositivos_lista {
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+}
+
+.dispositivos_titulo {
+    margin-bottom: 30px;
+}
+
+.image-icon {
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista_item {
+    margin-top: 20px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-alura {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.list-alura li, .list-alura a {
+    color: white !important;
+    text-decoration: none;
 }
