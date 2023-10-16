@@ -1,8 +1,8 @@
-:root{
+:root {
     --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
+    --cinza-alternativo: #cdc9c9;
+    --botao-azul: #2284fb;
+    --cor-de-fundo: #010513;
 }
 
 body {
@@ -16,7 +16,8 @@ body {
     text-decoration: none !important;
     list-style: none;
 }
-.principal {
+
+.main {
     background-image: url("Background.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -28,53 +29,53 @@ body {
     grid-template-columns: 50% 50%;
 }
 
-.container_botao{
+.container_botao {
     background-color: var(--botao-azul);
     border-radius: 1em;
     padding: 1em;
-    color:var(--branco-principal);
+    color: var(--branco-principal);
     display: block;
     text-decoration: none;
     margin-bottom: lem;
 }
 
-.botao_secundario{
+.botao_alternativo {
     background-color: transparent;
-    border: 2px solid var(--branco-principal);
-    border-radius: 16px;
+    border: 1px solid var(--branco-principal);
+    border-radius: 18px;
 }
 
-.container_aviso{
+.container_aviso {
     font-size: 12px;
-    color: var(--cinza-secundario);
+    color: var(--cinza-alternativo);
 }
 
-.container_titulo{
+.container_titulo {
     font-size: 28px;
     font-weight: 700;
 }
 
-.container_imagem{
+.container_imagem {
     margin: lem 0 2em 0;
 }
 
-.container_caixa{
+.container_caixa {
     margin: 0 6em;
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
-.secundario__imagem{
+.alternativo__imagem {
     width: 80%;
     align-items: center;
 }
 
-.secundario{
+.alternativo {
     align-items: center;
 }
 
-.descricao__titulo{
+.descricao__titulo {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 44px;
     color: var(--branco-principal);
     margin-bottom: 0.1em;
 }
@@ -88,13 +89,12 @@ body {
 
 .dispositivos_lista {
     display: flex;
-    
     align-items: center;
     text-align: center;
 }
 
 .dispositivos_titulo {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .image-icon {
@@ -106,7 +106,7 @@ body {
 }
 
 .lista_item {
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .rodape {
@@ -114,6 +114,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .list-alura {
@@ -121,10 +122,12 @@ body {
 
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 18px 0;
+
 }
 
 .list-alura li, .list-alura a {
     color: white !important;
     text-decoration: none;
+    padding: 0 6px;
 }
